@@ -1,7 +1,6 @@
 <div class="container">
   <h1>Validazione reactive form con {{ appName }}!!</h1>
   <form [formGroup]="angForm" novalidate>
-    
     <div class="form-group">
       <label>Name:</label>
       <input class="form-control" formControlName="name" type="text" />
@@ -39,21 +38,36 @@
     <button
       type="submit"
       [disabled]="angForm.pristine || angForm.invalid"
-      class="btn btn-success" (click)="invia()"
+      class="btn btn-success"
+      (click)="invia()"
     >
       Invia
     </button>
 
-    <hr>
-    <P>visualizzo due component per test log service
-    
-    <app-log-test></app-log-test>
-    <app-my></app-my>
-    
+    <hr />
   </form>
+
+  <div>
+    <P
+      >visualizzo due component per test log service
+
+      <app-log-test></app-log-test>
+      <app-my></app-my>
+    </P>
+  </div>
+
+  <hr />
+  <div>
+    <h3>Proviamo il routing</h3>
+    <nav>
+      <a routerLink="/my">il mio componente</a> |
+      <a routerLink="/app">logger test</a>
+    </nav>
+    <router-outlet></router-outlet>
+  </div>
+  <hr />
   <br />
+
   <p>Form value: {{ angForm.value | json }}</p>
   <p>Form status: {{ angForm.status | json }}</p>
-  
-  
 </div>
