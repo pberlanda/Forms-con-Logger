@@ -15,4 +15,8 @@ export class MyComponent implements OnInit {
   ngOnInit() {
   }
 
+  log(msg: string) {
+    this.myLog.log(msg);
+  }
+
 }

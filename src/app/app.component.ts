@@ -25,6 +25,6 @@ export class AppComponent  {
   }
 
   invia() {
-    this.myLog.log("btn invia");
+    this.myLog.log("btn invia da app component");
   }
 }
