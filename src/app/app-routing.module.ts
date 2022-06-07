@@ -3,11 +3,11 @@ import { CommonModule } from '@angular/common';
 
 import { RouterModule, Routes } from '@angular/router';
 import { MyComponent } from './my/my.component';
-import { AppComponent } from './app.component';
+import { LogTestComponent } from './log-test/log-test.component';
 
 const routes: Routes = [
   {path: 'my', component: MyComponent}
-  {path: 'app', component: AppComponent}
+  {path: 'app', component: LogTestComponent}
 ];
 
 @NgModule({
