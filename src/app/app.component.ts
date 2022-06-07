@@ -23,4 +23,8 @@ export class AppComponent  {
       email: ['', Validators.required]
     });
   }
+
+  invia() {
+    this.myLog.log("btn invia");
+  }
 }

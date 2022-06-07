@@ -40,7 +40,7 @@
     <button
       type="submit"
       [disabled]="angForm.pristine || angForm.invalid"
-      class="btn btn-success"
+      class="btn btn-success" (click)="invia()"
     >
       Invia
     </button>
